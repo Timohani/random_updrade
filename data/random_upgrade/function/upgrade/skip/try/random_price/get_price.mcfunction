@@ -1,0 +1,2 @@
+execute store result storage random_upgrade:temp reseter_remove int 0.2 run scoreboard players get @s reseter_usages
+function random_upgrade:upgrade/skip/try/random_price/random with storage random_upgrade:temp

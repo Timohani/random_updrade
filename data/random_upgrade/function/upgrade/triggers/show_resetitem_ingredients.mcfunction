@@ -1,0 +1,5 @@
+scoreboard players set @s .show_resetitem_ingredients 0
+
+execute at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 100 1
+
+$tellraw @s ["\n",{"color":"#55ffff","text":"= "},{"color":"#00aaaa","text":"Ингредиенты для создания "},{"color":"#002bff","obfuscated":true,"text":"R"},{"color":"#002bff","text":"E"},{"color":"#002bff","obfuscated":true,"text":"SE"},{"color":"#002bff","text":"T "},{"color":"#002bff","obfuscated":true,"text":"I"},{"color":"#002bff","text":"TE"},{"color":"#002bff","obfuscated":true,"text":"M "},{"color":"#55ffff","text":"=\n"},{"color":"#6666ff","text":"Предмет 1"},{"color":"#55ffff","text":": "},{"text":"$(CurrentFirstItem)\n",hover_event:{action:"show_item",id:"$(CurrentFirstItem)"}},{"color":"#6666ff","text":"Предмет 2"},{"color":"#55ffff","text":": "},{"text":"$(CurrentSecondItem)",hover_event:{action:"show_item",id:"$(CurrentSecondItem)"}}]

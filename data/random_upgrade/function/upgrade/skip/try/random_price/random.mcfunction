@@ -1,0 +1,1 @@
+$execute store result score @s reseter_remove.temp run random value 0..$(reseter_remove)

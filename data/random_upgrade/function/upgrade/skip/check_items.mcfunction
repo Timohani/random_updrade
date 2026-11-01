@@ -1,0 +1,1 @@
+$execute as @e[type=item,distance=..25,nbt={Item:{id:"$(CurrentFirstItem)",count:1}}] at @s if entity @e[limit=1,type=item,distance=..1,nbt={Item:{id:"$(CurrentSecondItem)",count:1}}] run function random_upgrade:upgrade/skip/get_random_motion

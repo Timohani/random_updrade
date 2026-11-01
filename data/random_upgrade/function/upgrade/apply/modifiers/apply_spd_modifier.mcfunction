@@ -1,0 +1,2 @@
+attribute @s minecraft:movement_speed modifier remove random_upgrade:spd_boost
+$execute if score @s lvl_speed matches 1.. run attribute @s minecraft:movement_speed modifier add random_upgrade:spd_boost $(AttrValue) add_multiplied_base

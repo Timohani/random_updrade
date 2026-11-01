@@ -1,0 +1,2 @@
+attribute @s minecraft:block_break_speed modifier remove random_upgrade:dig_boost
+$execute if score @s lvl_speed matches 1.. run attribute @s minecraft:block_break_speed modifier add random_upgrade:dig_boost $(AttrValue) add_multiplied_base
